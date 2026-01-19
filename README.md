@@ -1,24 +1,16 @@
-# Birthday Countdown
+## Birthday Countdown 🎉
 
-Web application that counts down the days, hours, minutes, and seconds until a birthday. It includes interactive features like celebratory animations and music when the countdown reaches zero.
+Counts down to your birthday and triggers an animation with balloons when the day arrives.
 
-## Features
+### Features
+- Countdown to specific date
+- Birthday animation with music
 
-- Live countdown to a selected birthday date.
-- Surprise animations (balloons) when the day arrives.
-- Optional music play.
-- Responsive design for desktop and mobile.
+### Demo
+[Live Demo on Netlify](https://birthdaycountdownproject.netlify.app/)
 
-## Technologies Used
+### Screenshot
+<img src="birthday_preview.jpg" alt="Birthday Countdown Preview" width="400">
 
-- **HTML5** – app structure
-- **CSS3** – styling and animations
-- **JavaScript** – countdown logic, animations, and audio control
-
-## Live Demo
-
-https://birthdaycountdownproject.netlify.app/
-
-### Screenshots
-
-<img src="birthday_preview.jpg" alt="Birthday countdown Preview" width="400">
+### Technologies
+JavaScript, HTML5, CSS3
