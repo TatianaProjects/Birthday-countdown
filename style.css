@@ -1,0 +1,198 @@
+body{
+    background-image:url(birthday.png );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom 60%;
+    
+    
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 60px;
+    background-color: rgba(251, 251, 251, 0.5); 
+    padding: 20px;
+    font-family: "Arima", system-ui;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #00ffcc, #ffcc00, #ff6699);
+    border-image-slice: 1;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.birthday{
+    background-color: rgba(251, 251, 251, 0.5); 
+    height: 300px;
+    width: 200px;
+    margin-top: 50px;
+
+    border: 3px solid #6abf69;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    font-size: 30px;
+    font-family: "Arima", system-ui;
+
+}
+
+.days, .minutes, .hours, .seconds {
+    font-family: "Arima", system-ui;
+    font-size: 40px;
+}
+
+.red{
+    font-size: 70px;
+    border:none;
+    font-family: "Arima", system-ui;
+    color: red;
+}
+#playButton {
+    margin-left:  150px;
+}
+
+button{
+    margin-left: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  font-family: "Arima", system-ui;
+  color: black;
+  font-size: 30px;
+}
+
+.birthday-inputs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  font-family: "Arima", system-ui;
+}
+
+.birthday-inputs input {
+  width: 80px;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Arima", system-ui;
+}
+
+.birthday-inputs button {
+  padding: 10px 20px;
+  background-color: white;
+  font-family: "Arima", system-ui;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.birthday-inputs button:hover {
+  background-color: #ff4d4d;
+}
+#fireworks-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.firework {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: radial-gradient(circle, white, transparent);
+  border-radius: 50%;
+  animation: explode 1s ease-out forwards;
+}
+
+.audio-button {
+
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+}
+
+.play {
+    background-image: url(https://img.icons8.com/?size=100&id=25578&format=png&color=000000);
+}
+
+.pause {
+
+    background-image: url(https://img.icons8.com/wired/64/000000/circled-pause.png);
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
+
+
+@media all and (max-width: 800px){
+    h1{
+        font-size: 40px;
+    }
+    .red{
+        font-size: 60px;
+        text-align: center;
+    }
+    #playButton {
+    margin-left:  0px;
+}
+    
+}
+
+@media all and (max-width: 500px){
+     body {
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .birthday-inputs {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+}
+  

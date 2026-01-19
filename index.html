@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div id="fireworks-container"></div>
+        <audio id="myAudio" src="Good_Morning_to_All(chosic.com).mp3" loop = "loop" autoplay = "allowed"></audio>
+
+    <div class="heading">
+        <h1>Birthday Countdown</h1>
+    </div>
+
+    <div class="input-section">
+            <label for="day">Enter your birthday:</label>
+        <div class="birthday-inputs">
+            <input id="day" type="number" min="1" max="31" placeholder="Day">
+            <input id="month" type="number" min="1" max="12" placeholder="Month">
+            <button id="startCountdown">Start Countdown</button>
+            </div>
+    </div>
+
+    <button id="playButton" class="audio-button play"></button>
+
+    <div class="container">
+        <div class="birthday">
+            <div class="block">
+                <h4 class="days" ></h4>
+                <h3>DAYS</h3>
+            </div>
+        </div>
+
+        <div class="birthday">
+            <div class="block">
+                <h4 class="hours" ></h4>
+                <h3>HOURS</h3>
+            </div>
+        </div>
+
+        <div class="birthday">
+            <div class="block">
+                <h4 class="minutes" ></h4>
+                <h3>MINUTES</h3>
+            </div>
+        </div>
+
+        <div class="birthday">
+            <div class="block">
+                <h4 class="seconds" ></h4>
+                <h3>SECONDS</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
