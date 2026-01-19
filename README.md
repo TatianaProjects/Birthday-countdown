@@ -18,3 +18,7 @@ Web application that counts down the days, hours, minutes, and seconds until a b
 ## Live Demo
 
 https://birthdaycountdownproject.netlify.app/
+
+### Screenshots
+
+<img src="birthday_preview.jpg" alt="Birthday countdown Preview" width="400">
